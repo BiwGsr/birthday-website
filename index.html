@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Prompt:wght@300;400;500;600&display=swap');
+:root{--p:#e987ad;--d:#ad5c80;--ink:#75465d}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Prompt,sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 20%,#fff 0 3px,transparent 4px),radial-gradient(circle at 90% 70%,#f6bfd2 0 3px,transparent 4px),linear-gradient(135deg,#fff4f7,#ffe1eb 55%,#fff8f0);background-size:110px 110px,150px 150px,cover;overflow-x:hidden}
+body:before,body:after{content:"♡";position:fixed;z-index:-1;color:#edb4c9;opacity:.25;font-size:200px}body:before{left:-60px;top:15%}body:after{right:-60px;bottom:0}
+button{font:inherit;cursor:pointer;border:0}.top{max-width:950px;margin:auto;padding:22px;display:flex;justify-content:space-between;color:#b86a8b}.brand{font:25px Itim}.status{font-size:12px;background:#fff9;border:1px solid #f3c7d7;border-radius:30px;padding:8px 13px}
+main{max-width:900px;margin:auto;padding:5px 20px 55px}.hero{text-align:center;padding:25px 0}.tag{font-size:11px;letter-spacing:1px;color:#b96c8b;border:1px solid #efc4d4;background:#fff9;padding:7px 15px;border-radius:30px}h1{font:clamp(45px,8vw,76px) Itim;color:#bd6b90;text-shadow:2px 3px white;margin:18px 0 5px}.hero p{font-size:13px;color:#a97c8e}
+.panel{background:#ffffffce;border:1px solid white;border-radius:28px;padding:26px;box-shadow:0 18px 55px #b9678620;backdrop-filter:blur(12px)}
+.slide{display:none;animation:show .45s ease}.slide.active{display:block}@keyframes show{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+h2{font:32px Itim;text-align:center;color:#b75f86;margin:0 0 5px}.desc{text-align:center;color:#a77b8d;font-size:13px;margin:0 0 22px}
+.actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:20px 0 4px}.btn{border-radius:30px;padding:11px 20px;color:white;background:linear-gradient(135deg,#ec9bb9,#d66f99);box-shadow:0 7px 15px #d66f9930;font-size:13px}.btn:hover{filter:brightness(1.04);transform:translateY(-1px)}.btn.alt{background:#fff;color:#b45e83;border:1px solid #efc5d5;box-shadow:none}.btn:disabled{opacity:.4;cursor:not-allowed}
+.dots{display:flex;justify-content:center;gap:7px;margin-top:22px}.dot{width:9px;height:9px;border-radius:20px;background:#edc7d5;cursor:pointer}.dot.active{width:25px;background:#d9759c}.nav{display:flex;justify-content:space-between;align-items:center;margin-top:18px;gap:8px}.nav span{font-size:12px;color:#b17b92}
+.cakearea{height:285px;display:grid;place-items:center;position:relative}.cake{position:relative;width:220px;height:210px}.plate{position:absolute;bottom:8px;width:220px;height:23px;border-radius:50%;background:linear-gradient(white,#e9b8ca)}.layer{position:absolute;left:20px;bottom:27px;width:180px;height:76px;border-radius:15px 15px 22px 22px;background:linear-gradient(90deg,#e99bb8,#fff0f5 48%,#e99bb8);box-shadow:inset 0 -8px #d982a1}.upper{left:40px;bottom:94px;width:140px;height:60px;background:linear-gradient(90deg,#f1b5ca,#fff7fa,#efa5bf)}.icing{position:absolute;left:40px;bottom:143px;width:140px;height:22px;border-radius:50%;background:#fff5f8}.drip{position:absolute;left:55px;bottom:126px;width:14px;height:25px;border-radius:0 0 10px 10px;background:#fff5f8;box-shadow:38px 7px #fff5f8,78px 0 #fff5f8,103px 6px #fff5f8}.candle{position:absolute;left:105px;bottom:164px;width:10px;height:40px;background:repeating-linear-gradient(135deg,#fff 0 6px,#ee9bb8 6px 12px);border-radius:5px}.flame{position:absolute;left:102px;bottom:201px;width:17px;height:24px;border-radius:50% 50% 45% 45%;background:radial-gradient(#fff7ae,#ffb84e 55%,#ff7e70);filter:drop-shadow(0 0 8px #ffb65c);animation:flick .6s infinite alternate}.flame.off{display:none}@keyframes flick{to{transform:rotate(7deg) scale(1.1)}}.berries{position:absolute;left:70px;bottom:151px;width:12px;height:12px;border-radius:50%;background:#d65f85;box-shadow:65px 4px #d65f85,92px -2px #d65f85}
+.spark{position:absolute;color:#e5a0b9;font-size:27px;animation:float 3s infinite ease-in-out}.sp1{left:18%;top:25%}.sp2{right:18%;top:22%;animation-delay:1s}@keyframes float{50%{transform:translateY(-12px) rotate(12deg)}}
+.letter{max-width:650px;margin:auto;padding:24px;background:#fffaf9;border:1px dashed #e6a9bf;border-radius:20px;white-space:pre-line;line-height:2;font-size:14px;min-height:170px}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.photo{padding:9px;background:white;border:1px solid #f0cada;border-radius:16px;box-shadow:0 8px 20px #a85b7820}
+/* ขยายขนาดกรอบรูปใหญ่ขึ้นที่นี่ */
+.frame{height:280px;border-radius:10px;background:linear-gradient(135deg,#ffe3ec,#fff7f9);display:grid;place-items:center;text-align:center;color:#b77a94;font-size:12px;overflow:hidden}.frame img{width:100%;height:100%;object-fit:cover}
+.photo label{display:block;text-align:center;padding:9px 0 2px;font-size:12px;color:#ad6785;cursor:pointer}.photo input{display:none}
+.song{max-width:540px;margin:auto;text-align:center;padding:24px;background:#fff8fa;border:1px solid #f1c7d6;border-radius:20px}.record{width:110px;height:110px;border-radius:50%;margin:0 auto 16px;background:repeating-radial-gradient(circle,#423441 0 2px,#756072 3px 5px);display:grid;place-items:center}.record i{width:34px;height:34px;background:#f0a9c2;border:5px solid #fff;border-radius:50%}.record.playing{animation:spin 4s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.songname{font-size:12px;color:#a77b8d}.seek{width:100%;accent-color:#d9759c}.small{text-align:center;font-size:11px;color:#b58a9b;margin-top:15px}
+#fx{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:10}.piece{position:absolute;top:-25px;animation:fall 3.2s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(650deg);opacity:.1}}#toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#87506a;color:white;padding:10px 18px;border-radius:30px;font-size:12px;opacity:0;transition:.25s;z-index:20;pointer-events:none}#toast.show{opacity:1;transform:translate(-50%,0)}
+footer{text-align:center;font:18px Itim;color:#bd8299;margin-top:25px}
+@media(max-width:600px){.panel{padding:18px 13px}.photos{grid-template-columns:1fr;max-width:270px;margin:auto}
+/* ปรับขนาดกรอบรูปสำหรับมือถือให้ใหญ่ขึ้นเล็กน้อย */
+.frame{height:220px}
+.top{padding:15px}.letter{padding:17px}}
+</style></head>
+<body><div id="fx"></div>
+<header class="top"><div class="brand">♡ a little surprise ♡</div><div class="status" id="status">♪ ยังไม่ได้เลือกเพลง</div></header>
+<main><section class="hero"><span class="tag">A SPECIAL DAY FOR SOMEONE SPECIAL</span><h1>Happy Birthday!</h1><p>วันนี้เป็นวันของเธอ ขอให้มีแต่รอยยิ้มนะ ♡</p></section>
+<section class="panel">
+<div class="slide active"><h2>มีอะไรจะให้ดูด้วยนะ 🎀</h2><p class="desc">ตั้งใจทำให้คนพิเศษคนหนึ่ง หวังว่าจะชอบนะ</p><div style="font-size:80px;text-align:center;padding:25px">💌</div><div class="actions"><button class="btn" id="start">เริ่มเซอร์ไพรส์ ✨</button></div></div>
+<div class="slide"><h2>เค้กก้อนนี้เป็นของเธอ 🎂</h2><p class="desc">อธิษฐานในใจ แล้วกดเป่าเทียนได้เลย</p><div class="cakearea"><span class="spark sp1">✦</span><span class="spark sp2">♡</span><div class="cake"><div class="plate"></div><div class="layer"></div><div class="layer upper"></div><div class="icing"></div><div class="drip"></div><div class="berries"></div><div class="candle"></div><div class="flame" id="flame"></div></div></div><div class="actions"><button class="btn" id="blow">เป่าเทียน 🌬️</button><button class="btn alt" id="relight">จุดเทียนอีกครั้ง</button></div><p class="small" id="candleMsg">ขอให้คำอธิษฐานของเธอเป็นจริงนะ</p></div>
+<div class="slide"><h2>ถึงคนพิเศษของฉัน 💗</h2><p class="desc">ข้อความเล็ก ๆ ที่อยากบอกในวันสำคัญ</p><div class="letter" id="letter">สุขสันต์วันเกิดนะคนเก่ง ♡
+
+ขอให้ปีนี้เป็นปีที่ใจดีกับเธอ
+มีแต่เรื่องดี ๆ เข้ามา ยิ้มเยอะ ๆ
+ไม่ว่าจะเจออะไร ขอให้รู้ไว้ว่ายังมีคนคอยเป็นกำลังใจให้เสมอ
+
+ขอบคุณที่เข้ามาเป็นรอยยิ้มในหลาย ๆ วัน
+ขอให้เธอมีความสุขมาก ๆ ในทุกวันเลยนะ
+
+รักและเอ็นดูเธอเสมอ ♡</div><div class="actions"><button class="btn alt" id="edit">แก้ไขข้อความ ✍️</button><button class="btn" id="hearts">ส่งหัวใจให้ 💕</button></div></div>
+<div class="slide"><h2>ความทรงจำของเรา 📸</h2><p class="desc">เลือกรูปจากเครื่องของคุณ รูปจะแสดงในกรอบด้านล่าง</p><div class="photos"><div class="photo"><div class="frame" id="f1">รูปความทรงจำที่ 1 ♡</div><label for="p1">＋ เพิ่มรูปที่ 1</label><input id="p1" type="file" accept="image/*"></div><div class="photo"><div class="frame" id="f2">รูปความทรงจำที่ 2 ♡</div><label for="p2">＋ เพิ่มรูปที่ 2</label><input id="p2" type="file" accept="image/*"></div><div class="photo"><div class="frame" id="f3">รูปความทรงจำที่ 3 ♡</div><label for="p3">＋ เพิ่มรูปที่ 3</label><input id="p3" type="file" accept="image/*"></div></div><div class="actions"><button class="btn alt" id="clearPhotos">ล้างรูปทั้งหมด</button></div></div>
+<div class="slide"><h2>เพลงนี้ให้เธอ 🎶</h2><p class="desc">เลือกเพลงจากเครื่อง แล้วกดเล่นได้เลย</p><div class="song"><div class="record" id="record"><i></i></div><input type="file" id="audioFile" accept="audio/*"><p class="songname" id="songName">ยังไม่ได้เลือกเพลง</p><audio id="audio"></audio><input class="seek" id="seek" type="range" min="0" max="100" value="0"><div class="actions"><button class="btn" id="play">▶ เล่นเพลง</button><button class="btn alt" id="stop">หยุดเพลง</button></div></div><p class="small">เพลงเล่นจากอุปกรณ์นี้เท่านั้น ไม่ได้อัปโหลดขึ้นเว็บไซต์</p><div class="actions"><button class="btn" id="celebrate">ฉลองให้เธอ! 🎉</button></div></div>
+<div class="dots" id="dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+<div class="nav"><button class="btn alt" id="prev">← ย้อนกลับ</button><span id="count">1 / 5</span><button class="btn" id="next">ถัดไป →</button></div>
+</section><footer>made with love, just for you ♡</footer></main><div id="toast"></div>
+<script>
+(()=>{const $=id=>document.getElementById(id),slides=[...document.querySelectorAll('.slide')],dots=[...document.querySelectorAll('.dot')];let page=0,urls=[null,null,null],audioURL=null;
+function say(t){$('toast').textContent=t;$('toast').classList.add('show');clearTimeout(say.t);say.t=setTimeout(()=>$('toast').classList.remove('show'),2200)}
+function go(n){page=Math.max(0,Math.min(4,n));slides.forEach((s,i)=>s.classList.toggle('active',i===page));dots.forEach((d,i)=>d.classList.toggle('active',i===page));$('count').textContent=(page+1)+' / 5';$('prev').disabled=page===0;$('next').textContent=page===4?'กลับหน้าแรก ↺':'ถัดไป →'}
+function party(n=45,heart=false){const root=$('fx'),chars=heart?['♡','♥','💕','✦']:['✦','●','♥','✧','♡'];for(let i=0;i<n;i++){let e=document.createElement('span');e.className='piece';e.textContent=chars[Math.floor(Math.random()*chars.length)];e.style.left=Math.random()*100+'%';e.style.color=['#e879a5','#f3b2c8','#d9a1d0','#f0bd78'][Math.floor(Math.random()*4)];e.style.fontSize=(12+Math.random()*15)+'px';e.style.animationDuration=(2.3+Math.random()*2)+'s';root.append(e);setTimeout(()=>e.remove(),4700)}}
+$('start').onclick=()=>{go(1);party(35)};$('prev').onclick=()=>go(page-1);$('next').onclick=()=>go(page===4?0:page+1);dots.forEach((d,i)=>d.onclick=()=>go(i));
+$('blow').onclick=()=>{$('flame').classList.add('off');$('candleMsg').textContent='เย้! ขอให้ทุกคำอธิษฐานเป็นจริงนะ 💗';$('blow').disabled=true;party(50);say('สุขสันต์วันเกิดนะ! 🎂')};
+$('relight').onclick=()=>{$('flame').classList.remove('off');$('blow').disabled=false;$('candleMsg').textContent='เทียนกลับมาติดแล้ว อธิษฐานได้อีกครั้ง ♡';say('จุดเทียนเรียบร้อย 🕯️')};
+$('edit').onclick=()=>{let v=prompt('พิมพ์ข้อความอวยพรใหม่:', $('letter').innerText);if(v!==null&&v.trim()){$('letter').textContent=v;say('เปลี่ยนข้อความแล้ว ♡')}};
+$('hearts').onclick=()=>{party(30,true);say('ส่งหัวใจให้แล้ว 💕')};
+['p1','p2','p3'].forEach((id,i)=>$(id).onchange=e=>{let f=e.target.files[0];if(!f)return;if(!f.type.startsWith('image/'))return say('กรุณาเลือกไฟล์รูปภาพ');if(urls[i])URL.revokeObjectURL(urls[i]);urls[i]=URL.createObjectURL(f);let img=document.createElement('img');img.src=urls[i];img.alt='รูปความทรงจำ';$('f'+(i+1)).replaceChildren(img);say('เพิ่มรูปเรียบร้อย ♡')});
+$('clearPhotos').onclick=()=>{for(let i=0;i<3;i++){if(urls[i])URL.revokeObjectURL(urls[i]);urls[i]=null;$('p'+(i+1)).value='';$('f'+(i+1)).textContent='รูปความทรงจำที่ '+(i+1)+' ♡'}say('ล้างรูปทั้งหมดแล้ว')};
+const a=$('audio');$('audioFile').onchange=e=>{let f=e.target.files[0];if(!f)return;if(!f.type.startsWith('audio/'))return say('กรุณาเลือกไฟล์เสียง');if(audioURL)URL.revokeObjectURL(audioURL);audioURL=URL.createObjectURL(f);a.src=audioURL;$('songName').textContent=f.name;$('status').textContent='♪ '+f.name;say('เพิ่มเพลงเรียบร้อย กดเล่นได้เลย')};
+$('play').onclick=async()=>{if(!a.src){say('กรุณาเลือกไฟล์เพลงก่อน');$('audioFile').click();return}if(a.paused){try{await a.play();$('play').textContent='Ⅱ พักเพลง';$('record').classList.add('playing')}catch(e){say('เล่นเพลงไม่ได้ กรุณาเลือกไฟล์ใหม่')}}else{a.pause();$('play').textContent='▶ เล่นเพลง';$('record').classList.remove('playing')}};
+$('stop').onclick=()=>{a.pause();a.currentTime=0;$('play').textContent='▶ เล่นเพลง';$('record').classList.remove('playing');$('seek').value=0;say('หยุดเพลงแล้ว')};
+a.ontimeupdate=()=>{if(a.duration)$('seek').value=a.currentTime/a.duration*100};$('seek').oninput=()=>{if(a.duration)a.currentTime=$('seek').value/100*a.duration};a.onended=()=>{$('play').textContent='▶ เล่นเพลง';$('record').classList.remove('playing')};
+$('celebrate').onclick=()=>{party(100);say('ขอให้มีความสุขที่สุดเลย! 🎉')};go(0);
+})();
+</script></body></html>
